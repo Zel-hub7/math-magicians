@@ -1,12 +1,8 @@
-import calculator from "./Components/calculator";
+// src/App.js
+import React from 'react';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <calculator />
-      </header>
-    </div>
-  );
+  return <div>Hello React</div>;
 }
 
 export default App;
