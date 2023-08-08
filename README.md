@@ -108,7 +108,7 @@ Clone this repository to your desired folder:
 
 👤 **Zelalem Yohannes**
 
-- GitHub: [Maris kapuka](https://github.com/Zel-hub7)
+- GitHub: [Zelalem Yohannes](https://github.com/Zel-hub7)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
