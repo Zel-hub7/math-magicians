@@ -1,52 +1,49 @@
-/* Calculator.css */
-
 .calculator {
-    display: inline-block;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .display {
-    background-color: #f7f7f7;
-    padding: 10px;
-    text-align: right;
-    margin-bottom: 10px;
-  }
-  
-  .button-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .operation-button {
-    background-color: #4caf50; /* Green color */
-    color: white; /* White text color */
-  }
-  
-  .operation-button:hover {
-    background-color: #45a049; /* Darker green color on hover */
-  }
-  
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.operation-button {
+  background-color: #4caf50; /* Green color */
+  color: white; /* White text color */
+}
+
+.operation-button:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}

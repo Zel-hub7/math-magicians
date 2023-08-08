@@ -1,10 +1,10 @@
 // Calculator.js
-import React from "react";
-import "./calculator.css"; // Import the CSS file
+import React from 'react';
+import './calculator.css'; // Import the CSS file
 
 function Button({ children, isOperation, isDouble }) {
-  const buttonClassName = isOperation ? "operation-button" : "";
-  const buttonStyle = isDouble ? { gridColumn: "span 2" } : {};
+  const buttonClassName = isOperation ? 'operation-button' : '';
+  const buttonStyle = isDouble ? { gridColumn: 'span 2' } : {};
   return (
     <button className={buttonClassName} style={buttonStyle}>
       {children}
