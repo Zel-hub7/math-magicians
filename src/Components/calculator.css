@@ -1,14 +1,15 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-
 }
 .calculator-screen {
   width: 100%;
   font-size: 19px;
-  height: 30px;
+  height: 45px;
   border: none;
   background-color: #a2a2a2;
   color: #fff;
@@ -24,23 +25,25 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
+  background-color: silver;
 }
 button {
   height: 30px;
-  
-
+  border-radius: none;
+  height: 45px;
+  background-color: #ebebeb;
+  border: none;
 }
 .oper {
-  background-color: rgb(255, 111, 0);
+  background-color: rgb(255, 149, 67);
   border: none;
-  
 }
 
 .calculator-grid {
   display: grid;
-  margin-top: 2px;
-  grid-template-columns: repeat(4, 6.13rem); 
-  gap: 2px;
+  margin-top: 0px;
+  grid-template-columns: repeat(4, 6.18rem);
+  gap: 1px;
 }
 .span-two {
   grid-column: span 2;
