@@ -3,9 +3,11 @@
 *::after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
 }
+
 .calculator-screen {
   width: 100%;
   font-size: 19px;
@@ -17,9 +19,9 @@ body {
   padding-right: 20px;
   padding-left: 10px;
 }
+
 .calculator {
   border: 1px solid #ccc;
-  border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,13 +29,13 @@ body {
   width: 400px;
   background-color: silver;
 }
+
 button {
-  height: 30px;
-  border-radius: none;
   height: 45px;
   background-color: #ebebeb;
   border: none;
 }
+
 .oper {
   background-color: rgb(255, 149, 67);
   border: none;
@@ -41,10 +43,11 @@ button {
 
 .calculator-grid {
   display: grid;
-  margin-top: 0px;
+  margin-top: 0;
   grid-template-columns: repeat(4, 6.18rem);
   gap: 1px;
 }
+
 .span-two {
   grid-column: span 2;
 }
