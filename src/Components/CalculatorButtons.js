@@ -1,3 +1,5 @@
+// CalculatorButtons.js
+
 import React from 'react';
 
 function CalculatorButtons({
@@ -6,11 +8,12 @@ function CalculatorButtons({
   onEqualClick,
   onClearClick,
   onDecimalClick,
+  onToggleSign,
 }) {
   return (
     <div className="calculator-grid">
       <button type="button" onClick={onClearClick}>AC</button>
-      <button type="button">+/-</button>
+      <button type="button" onClick={onToggleSign}>+/-</button>
       <button type="button" onClick={() => onOperatorClick('%')}>%</button>
       <button type="button" className="oper" onClick={() => onOperatorClick('/')}>/</button>
       <button type="button" onClick={() => onNumberClick(7)}>7</button>
