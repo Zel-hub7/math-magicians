@@ -17,9 +17,16 @@ function Calculator() {
   };
 
   const handleOperatorClick = (op) => {
-    setOperator(op);
-    setPreviousValue(inputValue);
-    setInputValue('0');
+    if (op === '%') {
+      handlePercentClick();
+    } else {
+      if (operator !== null && previousValue !== null) {
+        handleEqualClick();
+      }
+      setOperator(op);
+      setPreviousValue(inputValue);
+      setInputValue('0');
+    }
   };
 
   const handleEqualClick = () => {
@@ -66,6 +73,12 @@ function Calculator() {
     if (!inputValue.includes('.')) {
       setInputValue(inputValue + '.');
     }
+  };
+
+  const handlePercentClick = () => {
+    const num = parseFloat(inputValue);
+    const result = num / 100;
+    setInputValue(result.toString());
   };
 
   return (

@@ -7,44 +7,27 @@ function CalculatorButtons({
   onClearClick,
   onDecimalClick,
 }) {
-  const buttons = [
-    'AC', '+/-', '%', '/',
-    7, 8, 9, '*',
-    4, 5, 6, '-',
-    1, 2, 3, '+',
-    '0', '.', '='
-  ];
-
   return (
     <div className="calculator-grid">
-      {buttons.map((button) => (
-        <button
-          key={button}
-          type="button"
-          className={`${
-            typeof button === 'number'
-              ? ''
-              : button === '+' ||
-                button === '-' ||
-                button === '*' ||
-                button === '/' ||
-                button === '='
-              ? 'oper'
-              : ''
-          } ${button === '0' ? 'span-two' : ''}`}
-          onClick={
-            typeof button === 'number'
-              ? () => onNumberClick(button)
-              : button === '='
-              ? onEqualClick
-              : button === '.'
-              ? onDecimalClick
-              : () => onOperatorClick(button)
-          }
-        >
-          {button}
-        </button>
-      ))}
+      <button type="button" onClick={onClearClick}>AC</button>
+      <button type="button">+/-</button>
+      <button type="button" onClick={() => onOperatorClick('%')}>%</button>
+      <button type="button" className="oper" onClick={() => onOperatorClick('/')}>/</button>
+      <button type="button" onClick={() => onNumberClick(7)}>7</button>
+      <button type="button" onClick={() => onNumberClick(8)}>8</button>
+      <button type="button" onClick={() => onNumberClick(9)}>9</button>
+      <button className="oper" onClick={() => onOperatorClick('*')}>*</button>
+      <button type="button" onClick={() => onNumberClick(4)}>4</button>
+      <button type="button" onClick={() => onNumberClick(5)}>5</button>
+      <button type="button" onClick={() => onNumberClick(6)}>6</button>
+      <button className="oper" onClick={() => onOperatorClick('-')}>-</button>
+      <button type="button" onClick={() => onNumberClick(1)}>1</button>
+      <button type="button" onClick={() => onNumberClick(2)}>2</button>
+      <button type="button" onClick={() => onNumberClick(3)}>3</button>
+      <button className="oper" onClick={() => onOperatorClick('+')}>+</button>
+      <button className="span-two" onClick={() => onNumberClick(0)}>0</button>
+      <button type="button" onClick={onDecimalClick}>.</button>
+      <button type="button" className="oper" onClick={onEqualClick}>=</button>
     </div>
   );
 }
