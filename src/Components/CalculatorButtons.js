@@ -1,27 +1,47 @@
 import React from 'react';
 
-function CalculatorButtons() {
+function CalculatorButtons({
+  onNumberClick,
+  onOperatorClick,
+  onEqualClick,
+  onClearClick,
+}) {
+  const buttons = [
+    'AC', '+/-', '%', '/',
+    7, 8, 9, '*',
+    4, 5, 6, '-',
+    1, 2, 3, '+',
+    '0', '.', '='
+  ];
+
   return (
     <div className="calculator-grid">
-      <button type = 'button'>AC</button>
-      <button type = 'button'>+/-</button>
-      <button type = 'button'>%</button>
-      <button type='button' className="oper">/</button>
-      <button type = 'button'>7</button>
-      <button type = 'button'>8</button>
-      <button type = 'button'>9</button>
-      <button className="oper">*</button>
-      <button type = 'button'>4</button>
-      <button type = 'button'>5</button>
-      <button type = 'button'>6</button>
-      <button className="oper">-</button>
-      <button type = 'button'>1</button>
-      <button type = 'button'>2</button>
-      <button type = 'button'>3</button>
-      <button className="oper">+</button>
-      <button className="span-two">0</button>
-      <button type = 'button'>.</button>
-      <button type='button' className="oper">=</button>
+      {buttons.map((button) => (
+        <button
+          key={button}
+          type="button"
+          className={`${
+            typeof button === 'number'
+              ? ''
+              : button === '+' ||
+                button === '-' ||
+                button === '*' ||
+                button === '/' ||
+                button === '='
+              ? 'oper'
+              : ''
+          } ${button === '0' ? 'span-two' : ''}`}
+          onClick={
+            typeof button === 'number'
+              ? () => onNumberClick(button)
+              : button === '='
+              ? onEqualClick
+              : () => onOperatorClick(button)
+          }
+        >
+          {button}
+        </button>
+      ))}
     </div>
   );
 }

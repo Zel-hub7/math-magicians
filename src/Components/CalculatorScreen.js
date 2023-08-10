@@ -1,9 +1,9 @@
 import React from 'react';
 import './calculator.css';
 
-function CalculatorScreen() {
+function CalculatorScreen({ value }) {
   return (
-    <input className="calculator-screen" type="text" value="0" disabled />
+    <input className="calculator-screen" type="text" value={value} disabled />
   );
 }
 
