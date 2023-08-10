@@ -5,6 +5,7 @@ function CalculatorButtons({
   onOperatorClick,
   onEqualClick,
   onClearClick,
+  onDecimalClick,
 }) {
   const buttons = [
     'AC', '+/-', '%', '/',
@@ -36,6 +37,8 @@ function CalculatorButtons({
               ? () => onNumberClick(button)
               : button === '='
               ? onEqualClick
+              : button === '.'
+              ? onDecimalClick
               : () => onOperatorClick(button)
           }
         >

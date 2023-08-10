@@ -62,6 +62,12 @@ function Calculator() {
     setOperator(null);
   };
 
+  const handleDecimalClick = () => {
+    if (!inputValue.includes('.')) {
+      setInputValue(inputValue + '.');
+    }
+  };
+
   return (
     <div className="calculator">
       <CalculatorScreen value={inputValue} />
@@ -70,6 +76,7 @@ function Calculator() {
         onOperatorClick={handleOperatorClick}
         onEqualClick={handleEqualClick}
         onClearClick={handleClearClick}
+        onDecimalClick={handleDecimalClick}
       />
     </div>
   );
