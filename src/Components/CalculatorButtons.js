@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 function CalculatorButtons({ onButtonClick }) {
   const handleClick = (buttonName) => {
     onButtonClick(buttonName);

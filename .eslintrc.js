@@ -31,6 +31,7 @@ module.exports = {
             'onDecimalClick',
             'onToggleSign',
             'value',
+            'onButtonClick'
           ],
         },
       ],
