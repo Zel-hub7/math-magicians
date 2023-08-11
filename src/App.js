@@ -2,12 +2,13 @@
 import React from 'react';
 import Calculator from './Components/calculator';
 import Quotes from './Components/FetchAPI';
+import './index.css'
 
 function App() {
   return (
     <div>
-      <Quotes />
       <Calculator />
+      <Quotes />
     </div>
   );
 }

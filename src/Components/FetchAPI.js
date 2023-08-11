@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './quotes.css';
 
 function Quotes() {
   const [loading, setLoading] = useState(false);
@@ -35,7 +36,7 @@ function Quotes() {
       {quote.map((item) => (
         <div key={item.id} className="quotes-container">
           <p className="quote">{item.quote}</p>
-          <h1 className="author">{item.author}</h1>
+          <p className="author">{item.author}</p>
         </div>
       ))}
     </div>
