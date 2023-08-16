@@ -44,3 +44,6 @@ h1 {
 .container h1 {
   color: black;
 }
+.logo a {
+    text-decoration: none;
+}

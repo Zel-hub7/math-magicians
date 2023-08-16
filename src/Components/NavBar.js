@@ -3,7 +3,10 @@ import './navBar.css';
 const NavBar = () => {
     return(
         <nav className='navigation'>
-            <h1>Math Magician</h1>
+            <Link to = './'>
+            <h1 className='logo'>Math Magician</h1>
+            </Link>
+           
             <ul className='nav-list'>
                 <li>
                     <Link to = '/'>Home </Link>
