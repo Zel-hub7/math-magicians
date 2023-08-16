@@ -8,7 +8,6 @@ body {
   margin: 0;
 }
 
-
 .calculator-screen {
   width: 100%;
   font-size: 19px;
@@ -20,11 +19,13 @@ body {
   padding-right: 20px;
   padding-left: 10px;
 }
+
 .main-container {
   display: flex;
   justify-content: space-between;
   margin: 5%;
 }
+
 .calculator {
   border: 1px solid #ccc;
   margin-top: 2rem;
@@ -32,6 +33,7 @@ body {
   width: 400px;
   background-color: silver;
 }
+
 .title {
   color: rgb(0, 45, 12);
   font-weight: bolder;
@@ -41,7 +43,6 @@ button {
   height: 45px;
   background-color: rgb(229, 229, 229);
   border: none;
-  
 }
 
 .oper {
@@ -54,10 +55,8 @@ button {
   margin-top: 0;
   grid-template-columns: repeat(4, 6.18rem);
   gap: 1px;
-
 }
 
 .span-two {
   grid-column: span 2;
 }
-
