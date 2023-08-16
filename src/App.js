@@ -4,15 +4,18 @@ import Calculator from "./Components/calculator";
 import Quotes from "./Components/FetchAPI";
 import Home from "./Components/Home";
 import "./index.css";
+import NavBar from "./Components/NavBar";
 
 function App() {
   return (
     <>
-      <Routes>
-      <Route path="/" element={<Home />} />
-        <Route path = '/Calculator' element = {<Calculator />} />
-        <Route path = '/Quotes' element = {<Quotes /> } />
-      </Routes>
+      <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Calculator" element={<Calculator />} />
+          <Route path="/Quotes" element={<Quotes />} />
+        </Routes>
+   
     </>
   );
 }
