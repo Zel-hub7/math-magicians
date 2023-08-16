@@ -19,10 +19,18 @@ function Calculator() {
   };
 
   return (
-    <div className="calculator">
+    <div className='main-container'>
+     <div className='desc'>
+      <h1 className='title'>LET'S DO SOME MATH</h1>
+
+     </div>
+      <div className="calculator">
       <CalculatorScreen value={calculatorState.next || calculatorState.total || '0'} />
       <CalculatorButtons onButtonClick={handleButtonClick} />
     </div>
+
+    </div>
+    
   );
 }
 

@@ -32,7 +32,7 @@ function Quotes() {
   if (loading) return <div className="loading">Quote is loading...</div>;
   if (error) return <div>Error!!!</div>;
   return (
-    <div>
+    <div className='main-body'>
       {quote.map((item) => (
         <div key={item.id} className="quotes-container">
           <p className="quote">{item.quote}</p>
