@@ -7,7 +7,7 @@ test('renders loading state', () => {
     render(<Quotes />);
   
     const loadingText = screen.getByText(/Quote is loading.../i);
-    expect(loadingText).toBeInTheDocument();
+    expect(loadingText).toBeInTheDocument;
   });
 
 

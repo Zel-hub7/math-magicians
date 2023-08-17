@@ -10,9 +10,9 @@ test('renders navigation links correctly', () => {
       </MemoryRouter>
     );
   
-    expect(screen.getByText(/Home/i)).toBeInTheDocument();
-    expect(screen.getByText(/Calculator/i)).toBeInTheDocument();
-    expect(screen.getByText(/Quotes/i)).toBeInTheDocument();
+    expect(screen.getByText(/Home/i)).toBeInTheDocument;
+    expect(screen.getByText(/Calculator/i)).toBeInTheDocument;
+    expect(screen.getByText(/Quotes/i)).toBeInTheDocument;
   });
   
   test('matches snapshot', () => {
