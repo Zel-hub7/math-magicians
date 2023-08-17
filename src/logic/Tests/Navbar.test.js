@@ -4,23 +4,23 @@ import { MemoryRouter } from 'react-router-dom';
 import NavBar from '../../Components/NavBar';
 
 test('renders navigation links correctly', () => {
-    render(
-      <MemoryRouter>
-        <NavBar />
-      </MemoryRouter>
-    );
-  
-    expect(screen.getByText(/Home/i)).toBeInTheDocument;
-    expect(screen.getByText(/Calculator/i)).toBeInTheDocument;
-    expect(screen.getByText(/Quotes/i)).toBeInTheDocument;
-  });
-  
-  test('matches snapshot', () => {
-    const { container } = render(
-      <MemoryRouter>
-        <NavBar />
-      </MemoryRouter>
-    );
-  
-    expect(container).toMatchSnapshot();
-  });
+  render(
+    <MemoryRouter>
+      <NavBar />
+    </MemoryRouter>,
+  );
+
+  expect(screen.queryByText(/Home/i)).toBeTruthy();
+  expect(screen.queryByText(/Calculator/i)).toBeTruthy();
+  expect(screen.queryByText(/Quotes/i)).toBeTruthy();
+});
+
+test('matches snapshot', () => {
+  const { container } = render(
+    <MemoryRouter>
+      <NavBar />
+    </MemoryRouter>,
+  );
+
+  expect(container).toMatchSnapshot();
+});

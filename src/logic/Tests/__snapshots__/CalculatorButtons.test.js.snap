@@ -43,6 +43,7 @@ exports[`CalculatorButtons snapshot 1`] = `
     </button>
     <button
       class="oper"
+      type="button"
     >
       x
     </button>
@@ -63,6 +64,7 @@ exports[`CalculatorButtons snapshot 1`] = `
     </button>
     <button
       class="oper"
+      type="button"
     >
       -
     </button>
@@ -83,11 +85,13 @@ exports[`CalculatorButtons snapshot 1`] = `
     </button>
     <button
       class="oper"
+      type="button"
     >
       +
     </button>
     <button
       class="span-two"
+      type="button"
     >
       0
     </button>
