@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculatorScreen snapshot 1`] = `
+<DocumentFragment>
+  <input
+    class="calculator-screen"
+    disabled=""
+    type="text"
+    value="123"
+  />
+</DocumentFragment>
+`;
